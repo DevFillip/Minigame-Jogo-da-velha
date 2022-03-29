@@ -1,0 +1,54 @@
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.topnav{
+    background-color: red;
+    text-align: center;
+}
+
+.topnav h1{
+    padding: 8px 10px;
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+    -webkit-text-stroke: 1px rgb(0, 0, 0);
+   
+}
+
+.container-jogo{
+    align-items: center;
+    
+}
+
+.horizontal-line0{
+    background-color: black;
+    height: 5px;
+    width: 60%;
+    margin: 120px auto;
+    border-radius: 3px;
+}
+
+.horizontal-line1{
+    background-color: black;
+    height: 5px;
+    border-radius: 3px;
+    width: 60%;
+    margin: 120px auto;
+}
+
+
+
+.images-jogo > img:nth-child(1){
+    max-width: 100px;
+    position: relative;
+    top: -16px;
+}
+
+.images-jogo > img:nth-child(2){
+    max-width: 130px;
+}
