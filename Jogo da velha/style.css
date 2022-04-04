@@ -5,10 +5,11 @@
 :root {
     --cell-size:100px;
     --mark-size: calc(var(--cell-size) * .9);
-}
+}/* Aqui é a área onde criamos pre-sets para utilizar durante o css e facilitar a vida.*/
+
 body{
     margin: 0;
-}
+}/* resetando a margem do site */
 
 .board{
     width: 100vw;   
@@ -19,7 +20,8 @@ body{
     justify-items: center;
     align-items: center;
     grid-template-columns: repeat(3, auto);
-}
+}/* */
+
 
 .cell{
     width: var(--cell-size);
@@ -59,9 +61,12 @@ body{
 }
 
 .cell.x::before,
-.cell.x::after,
+.cell.x::after{
+    background-color: red;
+}
+
 .cell.circle::before{
-    background-color: black;
+    background-color: blue;
 }
 .board.x .cell:not(.x):not(.circle):hover::before,
 .board.x .cell:not(.x):not(.circle):hover::after,
