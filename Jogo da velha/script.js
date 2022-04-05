@@ -1,5 +1,5 @@
-const X_CLASS = 'x'
-const CIRCLE_CLASS = 'circle'
+const X_CLASS = 'x'; // uma forma de chamar mais facilment o X e o circle, para poder utilizar nas várias combinações que precisam disso.
+const CIRCLE_CLASS = 'circle'; 
 const WINNING_COMBINATIONS = [
     [0,1,2],
     [3,4,5],
@@ -9,12 +9,12 @@ const WINNING_COMBINATIONS = [
     [2,5,8],
     [0,4,8],
     [2,4,6]
-]
+]; // condições de vitória do jogo.
 
-const cellElements = document.querySelectorAll('[data-cell]')
-const board = document.getElementById('board')
-const winningMessageElement = document.getElementById('winningMessage')
-const restartButton = document.getElementById('restartButton')
+const cellElements = document.querySelectorAll('[data-cell]'); // aqui ele não puxou pelas classes em si, e sim pelo [data-cell]
+const board = document.getElementById('board'); // chamando o ID board pra manipular todos os elementos de uma vez.
+const winningMessageElement = document.getElementById('winningMessage'); // criando a variavel para dizer quem venceu o jogo
+const restartButton = document.getElementById('restartButton'); // variavel que vai fazer com que o botão de restart funcione quando ele aparecer. 
 const winningMessageTextElement = document.querySelector('[data-winning-message-text]')
 let circleTurn 
 
@@ -22,6 +22,8 @@ starGame()
 
 restartButton.addEventListener('click', starGame)
 function starGame(){
+
+    
     cellElements.forEach(cell =>{
         cell.classList.remove(X_CLASS)
         cell.classList.remove(CIRCLE_CLASS)
