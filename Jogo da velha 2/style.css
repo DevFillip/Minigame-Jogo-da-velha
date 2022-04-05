@@ -8,14 +8,14 @@
     background-color: #12181B;
     height: 100vh;
     padding-top: 1px;
-}
+}/* Setando a cor e o espaçamento de todo o conteúdo, o Padding faz com que não fique uma parte branca em cima*/
 
 .title{
     color: white;
     text-align: center;
     font-size: 40px;
     margin-top: 2%;
-}
+}/*Titulo padrão com um alinhamento no centro.*/
 
 .display{
     color: white;
@@ -23,11 +23,11 @@
     text-align: center;
     margin-top: 1em;
     margin-bottom: 1em;
-}
+}/*Setando a cor e o alinhamento que vai ficar a parte que diz a vez de quem que é*/
 
 .hide{
     display: none;
-}
+}/*Aqui ficará escondido, até que la no JS aconteça tudo, para essa parte aparecer.*/
 
 .container{
     margin: 0 auto;
@@ -35,7 +35,8 @@
     grid-template-columns: 33% 33% 33%;
     grid-template-rows: 33% 33% 33%;
     max-width: 300px;
-}
+    
+}/*Aqui está criado toda a parte onde ficará o conteúdo do jogo da velha, utilizando o grid template columns e rows e o display grid*/
 
 .tile{
     border: 1px solid white;
@@ -46,24 +47,23 @@
     align-items:center;
     font-size: 50px;
     cursor: pointer;
-}
+}/*Aqui é onde foi feito o grid de fato, se baseando nos 300px, e utilizando 100 para cada, só é possivel fazer isso aqui por conta que atinge diretamente as 9 Divs, e por isso que não dá para fazer no container*/
 
 .playerX{
     color:#09C372;
 
-}
+}/*Aqui está setado a cor do X em tds os lugares que aparecer e tiver essa classe*/
 
 .playerO{
     color: #498AFB;
-}
+}/*Aqui está setado a cor do O em tds os lugares que aparecer e tiver essa classe*/
 
 .controls{
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
     margin-top: 1em;
-}
+}/*Como essa parte vai sair depois para dar espaço pra quem venceu, ela precisa ter um margin top, e o display flex para poder alterar ele.*/
 
 #reset{
     padding: 6px 10px; 
@@ -74,4 +74,4 @@
     font-size: 20px;
     cursor: pointer;
 
-}
+}/*E aqui uma estilização de boas dos botões.*/
